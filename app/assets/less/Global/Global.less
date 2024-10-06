@@ -1,0 +1,162 @@
+body {
+  .normal;
+  font-family: 'Montserrat', sans-serif;
+
+  @media(max-width: @mobile) {
+    &.stop-scroll {
+      overflow: hidden;
+    }
+  }
+}
+
+a {
+  color: inherit;
+
+  &:focus {
+    color: inherit;
+    text-decoration: none !important;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+
+  @media(max-width: @desktop) {
+    width: 1024px;
+  }
+
+  @media(max-width: @tablet) {
+    width: 100%;
+  }
+}
+
+.row {
+  &.narrow {
+    .mX(-10px, -10px);
+
+    [class*="col-"] {
+      padding: 10px;
+    }
+  }
+}
+
+.full {
+  width: 100%;
+}
+
+.max-full {
+  max-width: 100%;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bg-white {
+  background: @white;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.absolute-center {
+  .absolute;
+  .translateXY(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.dot {
+  color: @primary-yellow;
+}
+
+.link {
+  .font(20px, 45px);
+  .normal;
+  .semi-bold;
+  .text-uppercase;
+  color: @primary-yellow;
+  letter-spacing: 1px;
+
+  &-normal {
+    .font(22px, 37px);
+    .light;
+    color: @black;
+    text-decoration: underline;
+    text-transform: none;
+
+    &:hover {
+      .underline;
+    }
+
+    &:hover, &:focus {
+      color: @primary-yellow;
+    }
+  }
+}

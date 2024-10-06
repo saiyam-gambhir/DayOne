@@ -1,0 +1,53 @@
+.help {
+  .pY(135px, 103px);
+  background: @light-bg;
+
+  @media(max-width: @tablet) {
+    .pY(75px, 75px);
+  }
+
+  @media(max-width: @mobile) {
+    .pY(20px, 40px);
+  }
+  
+  &__col {
+    .padding-0;
+  }
+
+  &__content {
+    .pT(47px);
+
+    .h3 {
+      .pB(0);
+    }
+
+    @media(max-width: @mobile) {
+      .pY(30px, 15px);
+    }
+  }
+
+  &__figure {
+    .relative;
+
+    img:not(.icon) {
+      .full;
+    }
+
+    .icon {
+      .absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 35px;
+    }
+  }
+
+  &__text {
+    .font(25px, 41px);
+    .margin-0;
+    letter-spacing: .25px;
+
+    @media(max-width: @mobile) {
+      .font(20px, 32px);
+    }
+  }
+}

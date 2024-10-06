@@ -1,0 +1,78 @@
+.directors {
+  .pY(125px, 118px);
+
+  @media(max-width: @tablet) {
+    .pY(75px, 75px);
+  }
+
+  @media(max-width: @mobile) {
+    .pY(20px, 40px);
+  }
+
+  &__image {
+    .relative;
+
+    img {
+      .full;
+    }
+
+    .linkedin-icon {
+      .absolute;
+      bottom: 15px;
+      left: 15px;
+      z-index: 1;
+
+      img {
+        .size(auto, 41px);
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    .pX(0, 0);
+  }
+
+  .h2 {
+    color: @text-light;
+    .pB(76px);
+
+    @media(max-width: @tablet) {
+      .pB(40px);
+    }
+  }
+
+  &__content {
+    .pY(30px, 20px);
+    .pX(30px, 30px);
+
+    @media(max-width: @tablet) {
+      .pT(0);
+    }
+
+    @media(max-width: @mobile) {
+      .pX(0, 0);
+      .pY(10px, 10px);
+    }
+  }
+
+  &__name {
+    .font(24px, 41px);
+    .pB(0);
+  }
+
+  &__post {
+    .italic;
+    .font(24px, 41px);
+  }
+
+  &__about {
+    .font(16px, 27px);
+    .mT(30px);
+
+    @media(max-width: @tablet) {
+      .mT(10px);
+      .font(14px, 24px);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.primary-header {
+  .relative;
+  background: @black;
+  height: 95px;
+
+  @media(max-width: @mobile) {
+    height: auto;
+    min-height: 80px;
+  }
+}
+
+.brand {
+  .absolute;
+  .translateY(-50%);
+  left: 110px;
+  top: 50%;
+
+  @media(max-width: @desktop) {
+    left: 50px;
+  }
+
+  @media(max-width: @mobile) {
+    .mL(25px);
+    .pY(26px, 25px);
+    .relative;
+    .translateY(0);
+    left: auto;
+    top: auto;
+  }
+
+  &__image {
+    .size(164px, auto);
+
+    @media(max-width: @tablet) {
+      .size(150px, auto);
+    }
+
+    @media(max-width: @mobile) {
+      .size(125px, auto);
+    }
+  }
+}
+
+.menu-open {
+  .absolute;
+  .mT(-11.5px);
+  .pointer;
+  .size(23px, 23px);
+  .transition(.3s);
+  right: 99px;
+  top: 50%;
+
+  @media(max-width: @desktop) {
+    right: 50px;
+  }
+
+  @media(max-width: @mobile) {
+    right: 25px;
+    z-index: 101;
+  }
+
+  &:before {
+    .content(@primary-yellow, auto, 4px, 0, absolute, auto, 50%, 100%);
+    .mT(-2px);
+  }
+
+  &:after {
+    .content(@primary-yellow, auto, 100%, 50%, absolute, auto, 0, 4px);
+    .mL(-2px);
+  }
+
+  &.active {
+    .rotate(45deg);
+    transform-origin: center;
+  }
+}

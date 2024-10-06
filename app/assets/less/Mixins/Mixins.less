@@ -1,0 +1,98 @@
+.transition(@time) {
+  -moz-transition: @time;
+  -ms-transition: @time;
+  -o-transition: @time;
+  -webkit-transition: @time;
+  transition: @time;
+}
+
+.border-radius(@radius) {
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.content(@background, @bottom, @height, @left, @position, @right, @top, @width) {
+  content: '';
+  background: @background;
+  bottom: @bottom;
+  height: @height;
+  left: @left;
+  position: @position;
+  right: @right;
+  top: @top;
+  width: @width;
+  z-index: 1;
+}
+
+.rotate(@degrees) {
+  -moz-transform: rotate(@degrees);
+  -ms-transform: rotate(@degrees);
+  -o-transform: rotate(@degrees);
+  -webkit-transform: rotate(@degrees);
+  transform: rotate(@degrees);
+}
+
+.translateX(@unit) {
+  -moz-transform: translateX(@unit);
+  -ms-transform: translateX(@unit);
+  -o-transform: translateX(@unit);
+  -webkit-transform: translateX(@unit);
+  transform: translateX(@unit);
+}
+
+.translateY(@unit) {
+  -moz-transform: translateY(@unit);
+  -ms-transform: translateY(@unit);
+  -o-transform: translateY(@unit);
+  -webkit-transform: translateY(@unit);
+  transform: translateY(@unit);
+}
+
+.translateXY(@unitX, @unitY) {
+  -moz-transform: translateX(@unitX) translateY(@unitY);
+  -ms-transform: translateX(@unitX) translateY(@unitY);
+  -o-transform: translateX(@unitX) translateY(@unitY);
+  -webkit-transform: translateX(@unitX) translateY(@unitY);
+  transform: translateX(@unitX) translateY(@unitY);
+}
+
+.rotateTransformXY(@degrees, @unitX, @unitY) {
+  -moz-transform: rotate(@degrees) translateX(@unitX) translateY(@unitY);
+  -ms-transform: rotate(@degrees) translateX(@unitX) translateY(@unitY);
+  -o-transform: rotate(@degrees) translateX(@unitX) translateY(@unitY);
+  -webkit-transform: rotate(@degrees) translateX(@unitX) translateY(@unitY);
+  transform: rotate(@degrees) translateX(@unitX) translateY(@unitY);
+}
+
+.font(@size: 14px, @height: 24px) {
+  font-size: @size;
+  line-height: @height;
+}
+
+.size(@width, @height) {
+  height: @height;
+  width: @width;
+}
+
+.v-align(@position) {
+  display: inline-block;
+  vertical-align: @position;
+}
+
+.truncate(@width) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: @width;
+}
+
+.scale(@times) {
+  -moz-transform: scale(@times);
+  -ms-transform: scale(@times);
+  -o-transform: scale(@times);
+  -webkit-transform: scale(@times);
+  transform: scale(@times);
+}

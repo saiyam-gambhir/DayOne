@@ -1,0 +1,82 @@
+.project {
+  .relative;
+
+  &__figure {
+    img {
+      .full;
+    }
+  }
+
+  &__prev,
+  &__next {
+    .absolute;
+    bottom: 31px;
+    z-index: 1;
+  }
+
+  &__prev {
+    left: 25px;
+  }
+
+  &__next {
+    right: 25px;
+  }
+}
+
+.project-details {
+  .pY(0, 60px);
+
+  @media(max-width: @mobile) {
+    .pY(0, 40px);
+  }
+
+  &__row {
+    .h3, p, li {
+      .font(19px, 30px);
+      .pB(0);
+    }
+
+    ul {
+      .margin-0;
+      .padding-0;
+    }
+
+    p, li {
+      .light;
+      color: @text-black;
+    }
+  }
+
+  .portfolio-items {
+    .pY(0, 53px);
+  }
+}
+
+.portfolio-items {
+  .pB(123px);
+
+  @media(max-width: @tablet) {
+    .pB(75px);
+  }
+
+  @media(max-width: @mobile) {
+    .pB(50px);
+  }
+
+  img {
+    .full;
+    min-height: 390px;
+
+    @media(max-width: @tablet) {
+      min-height: initial;
+    }
+  }
+
+  .left {
+    .pR(0);
+  }
+
+  .right {
+    .pL(0);
+  }
+}

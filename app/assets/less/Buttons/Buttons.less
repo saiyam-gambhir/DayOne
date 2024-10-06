@@ -1,0 +1,82 @@
+.btn {
+  .bold;
+  .border-radius(0);
+  .inline-block;
+  .no-underline;
+  .pX(23px, 23px);
+  .pY(0, 0);
+  .size(auto, 72px);
+  .text-uppercase;
+  background: @transparent;
+  border: 1px solid @black;
+  color: @black;
+  height: 72px;
+  line-height: 72px;
+
+  &-white {
+    .bold;
+    .full;
+    .transition(.25s);
+    border-color: @white;
+    color: @white;
+    font-size: 22px;
+
+    @media(max-width: @desktop) {
+      font-size: 18px;
+    }
+
+    @media(max-width: @tablet) {
+      font-size: 16px;
+    }
+
+    @media(max-width: @tabletSmall) {
+      font-size: 14px;
+    }
+
+    @media(max-width: @mobile) {
+      font-size: 17px;
+    }
+
+    &:hover {
+      border-color: @black;
+      color: @black !important;
+    }
+  }
+
+  &:hover, &:focus {
+    color: inherit;
+  }
+}
+
+.back-to {
+  img {
+    .mR(7px);
+    .relative;
+    .size(35px, auto);
+    top: -1px;
+
+    @media(max-width: @mobile) {
+      .size(25px, auto);
+    }
+  }
+
+  .extra-bold;
+  .font(30px, 50px);
+  .inline-block;
+  .mY(30px, 105px);
+  .transition(.3s);
+  color: @text-yellow;
+
+  &:hover {
+    color: @text-yellow;
+  }
+
+  @media(max-width: @tablet) {
+    .mY(30px, 80px);
+  }
+
+  @media(max-width: @mobile) {
+    .mY(20px, 40px);
+    .font(20px, 50px);
+  }
+}

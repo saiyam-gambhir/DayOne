@@ -1,0 +1,38 @@
+.cover {
+  .mT(-165px);
+
+  @media(max-width: @tablet) {
+    .mT(-100px);
+  }
+
+  &__image {
+    img {
+      .full;
+    }
+  }
+
+  &__content {
+    .pR(425px);
+    .pY(125px, 80px);
+    color: @text-black;
+
+    @media(max-width: @tablet) {
+      .pR(0);
+      .pY(60px, 60px);
+    }
+
+    @media(max-width: @mobile) {
+      .pR(0);
+      .pY(30px, 30px);
+    }
+
+    p {
+      .font(19px, 30px);
+      .light;
+    }
+
+    .h4 {
+      .pY(0, 20px);
+    }
+  }
+}

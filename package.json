@@ -1,0 +1,18 @@
+{
+  "name": "dayone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
+    "less": "^4.2.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "slick-carousel": "^1.8.1"
+  }
+}

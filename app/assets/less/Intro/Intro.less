@@ -1,0 +1,31 @@
+.intro {
+  .pY(87px, 87px);
+  .text-center;
+
+  @media(max-width: @mobile) {
+    .pY(50px, 50px);
+  }
+
+  &__holder {
+    width: 635px;
+    .mx-auto;
+
+    @media(max-width: @mobile) {
+      .full;
+    }
+  }
+
+  &__heading,
+  &__text {
+    .font(30px, 40px);
+
+    @media(max-width: @mobile) {
+      .font(25px, 35px);
+    }
+  }
+
+  &__text {
+    .light;
+    .mB(0);
+  }
+}

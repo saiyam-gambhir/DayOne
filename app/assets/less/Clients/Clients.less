@@ -1,0 +1,38 @@
+.clients {
+  .pY(155px, 120px);
+  background: @black-bg;
+
+  @media(max-width: @tablet) {
+    .pY(100px, 90px);
+  }
+
+  @media(max-width: @mobile) {
+    .pY(60px, 60px);
+  }
+
+  p {
+    .font(22px, 37px);
+    .extra-light;
+    .pT(60px);
+    color: @white;
+
+    @media(max-width: @tablet) {
+      .font(20px, 35px);
+      .pT(50px);
+    }
+
+    @media(max-width: @mobile) {
+      .font(18px, 32px);
+      .pT(30px);
+    }
+  }
+
+  &__image-list {
+    .full;
+    .mT(10px);
+  }
+
+  @media(max-width: @mobile) {
+    .text-center;
+  }
+}

@@ -1,0 +1,293 @@
+.extra-bold {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.normal, 
+.light,
+.extra-light {
+  font-weight: 200;
+}
+
+.thin {
+  font-family: 'Roboto', sans-serif;
+}
+
+.italic {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, .h1 {
+  .font(126px, 141px);
+  .margin-0;
+  .pY(10px, 10px);
+  font-weight: 800;
+  letter-spacing: .5px;
+
+  @media(max-width: @tablet) {
+    .font(100px, 115px);
+  }
+
+  @media(max-width: @mobile) {
+    .font(46px, 56px);
+  }
+}
+
+h2, .h2 {
+  .extra-bold;
+  .font(30px, 35px);
+  .margin-0;
+
+  &.lg {
+    .font(86px, 95px);
+    .pB(59px);
+
+    @media(max-width: @tablet) {
+      .font(70px, 80px);
+      .pB(40px);
+    }
+
+    @media(max-width: @mobile) {
+      .font(35px, 50px);
+      .pB(20px);
+      .text-center;
+    }
+  }
+
+  @media(max-width: @desktop) {
+    .font(28px, 33px);
+  }
+
+  @media(max-width: @tablet) {
+    .font(26px, 31px);
+  }
+
+  @media(max-width: @mobile) {
+    .font(22px, 27px);
+  }
+}
+
+h3, .h3,
+h4, .h4 {
+  .extra-bold;
+  .font(25px, 41px);
+  .margin-0;
+  .pY(10px, 10px);
+  letter-spacing: .5px;
+
+  @media(max-width: @mobile) {
+    .font(18px, 28px);
+  }
+}
+
+h4, .h4 {
+  .font(19px, 30px);
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.heading {
+  .font(84px, 90px);
+  color: @white;
+
+  &__italic {
+    .block;
+    .italic;
+    font-weight: normal;
+  }
+
+  @media(max-width: @desktop) {
+    .font(74px, 80px);
+  }
+
+  @media(max-width: @tablet) {
+    .font(64px, 70px);
+  }
+
+  @media(max-width: @mobile) {
+    .font(54px, 60px);
+  }
+}
+
+.page-heading {
+  .pY(165px, 85px);
+  background: @black;
+
+  .container {
+    .relative;
+  }
+
+  &-md {
+    .h1 {
+      .font(96px, 107px);
+
+      @media(max-width: @tablet) {
+        .font(76px, 87px);
+      }
+
+      @media(max-width: @mobile) {
+        .font(46px, 56px);
+      }
+    }
+  }
+
+  &-sm {
+    .h1 {
+      .font(86px, 100px);
+
+      @media(max-width: @tablet) {
+        .font(70px, 80px);
+      }
+
+      @media(max-width: @mobile) {
+        .font(46px, 56px);
+      }
+    }
+  }
+
+  @media(max-width: @tablet) {
+    .container {
+      .pX(50px, 50px);
+    }
+
+    .pY(100px, 50px);
+  }
+
+  @media(max-width: @mobile) {
+    .container {
+      .pX(25px, 25px);
+    }
+
+    .pY(50px, 25px);
+  }
+
+  .h1 {
+    color: @white;
+  }
+
+  p {
+    .font(22px, 37px);
+    .extra-light;
+    .margin-0;
+    .pY(100px, 25px);
+    color: @font-grey;
+    max-width: 555px;
+
+    @media(max-width: @tablet) {
+      .pY(100px, 30px);
+    }
+
+    @media(max-width: @mobile) {
+      .font(20px, 35px);
+      .pY(100px, 10px);
+    }
+  }
+
+  &__page {
+    .font(57px, 107px);
+    color: @text-black;
+
+    @media(max-width: @tablet) {
+      .font(50px, 100px);
+    }
+
+    @media(max-width: @mobile) {
+      .font(40px, 60px);
+    }
+  }
+
+  &__link {
+    .absolute;
+    bottom: 110px;
+    right: 15px;
+    z-index: 1px;
+
+    @media(max-width: @mobile) {
+      .inline-block;
+      .mB(25px);
+      .mT(0);
+      .relative;
+      bottom: 60px;
+      left: 0;
+      right: auto;
+    }
+
+    &:hover {
+      path {
+        stroke: @bg-yellow;
+      }
+    }
+  }
+
+  .social-links {
+    .size(auto, 50px);
+    .text-right;
+    bottom: 100px;
+    left: auto;
+    right: 15px;
+    top: auto;
+    transform: none;
+
+    @media(max-width: 900px) {
+      .scale(.8);
+      bottom: 65px;
+      right: 0;
+    }
+
+    @media(max-width: @mobile) {
+      .mY(95px, -55px) !important;
+      .pY(15px, 0);
+      .relative;
+      .scale(.75);
+      .size(100%, auto);
+      .text-center;
+      bottom: auto;
+      right: auto;
+    }
+
+    li, a {
+      .size(51px, 51px);
+    }
+
+    li {
+      + li {
+        .mL(25px);
+
+        @media(max-width: 900px) {
+          .mL(15px);  
+        }
+
+        @media(max-width: @mobile) {
+          .mL(25px);  
+        }
+      }
+
+      &.facebook-icon {
+        a {
+          background-position: -76px 0 !important;
+        }
+      }
+
+      &.instagram-icon {
+        a {
+          background-position: -152px 0 !important;
+        }
+      }
+
+      &.twitter-icon {
+        a {
+          background-position: -224px 0 !important;
+        }
+      }
+    }
+  }
+}

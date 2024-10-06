@@ -1,0 +1,30 @@
+.filter {
+
+  @media(max-width: 992px) {
+    .mT(30px);
+  }
+
+  &__list {
+    .mB(26px);
+    .padding-0;
+  }
+
+  &__name {
+    .capitalize;
+    .pY(0, 0);
+  }
+
+  &__link {
+    .capitalize;
+    .font(19px, 30px);
+    .inline-block;
+    .no-underline;
+    .transition(.3s);
+    .truncate(auto);
+    max-width: 100%;
+
+    &:hover {
+      color: @text-yellow;
+    }
+  }
+}
